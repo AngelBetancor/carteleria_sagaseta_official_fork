@@ -1,5 +1,6 @@
 <?php
 define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
+include_once 'src/db/cx_alert.php';
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +21,12 @@ define('BASE_URL', '/Proyectos/carteleria_sagaseta_official');
 
   <div>
     <section>
-      Espacio para el alert
+      <?php
+        // Mostrar las alertas si la función generaAlertasFechas se ejecuta
+        if (isset($conn) && $conn) {
+            generarAlertasFechas($conn);
+        }
+      ?>
     </section>
 
     <header class="header_container">
