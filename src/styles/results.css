@@ -105,3 +105,11 @@ p {
         width: 80%;                /* Los carteles ocupan más espacio en pantallas pequeñas */
     }
 }
+
+.alert {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }

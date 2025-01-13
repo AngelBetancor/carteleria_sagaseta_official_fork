@@ -117,3 +117,11 @@ main {
   text-align: left;
   line-height: 1.5;
 }
+
+.alert {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
